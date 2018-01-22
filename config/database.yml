@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+
+development:
+  <<: *default
+  database: blockchain_development
+
+test:
+  <<: *default
+  database: blockchain_test
+
+production:
+  <<: *default
+  database: blockchain_production
