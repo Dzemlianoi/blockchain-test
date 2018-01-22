@@ -8,8 +8,8 @@ end
 gem 'active_model_serializers'
 gem 'rails', '~> 5.0.2'
 gem 'puma', '~> 3.0'
-gem 'pg'
-gem 'figaro'
+gem 'pg', '~> 0.18'
+gem 'responders'
 
 group :development do
   gem 'pry'
