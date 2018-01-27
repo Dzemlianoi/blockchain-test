@@ -10,19 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180122200318) do
+ActiveRecord::Schema.define(version: 20180127102634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "blocks", force: :cascade do |t|
-    t.string   "data"
+    t.string   "hash_data"
+    t.string   "prev_hash_data"
+    t.jsonb    "tx"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "nodes", id: false, force: :cascade do |t|
+    t.integer  "id"
+    t.string   "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "hashes", force: :cascade do |t|
-    t.jsonb    "hash_block"
+  create_table "transactions", force: :cascade do |t|
+    t.string   "from"
+    t.string   "to"
+    t.integer  "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

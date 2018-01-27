@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  post 'add_data', to: 'blockchain#add_data'
-  get 'last_blocks/:quantity', to: 'blockchain#last_blocks'
+  mount RailsAdmin::Engine => '/admin'
+  get 'blockchain/get_blocks/:num_blocks', to: 'blockchain#get_blocks'
+  post 'blockchain/receive_update', to: 'blockchain#receive_update'
+  post 'management/add_transaction', to: 'management#add_transaction'
+  post 'management/add_link', to: 'management#add_link'
+  get 'management/status', to: 'management#status'
+  get 'management/sync', to: 'management#sync'
 end

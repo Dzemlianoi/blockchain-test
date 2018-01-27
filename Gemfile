@@ -10,6 +10,7 @@ gem 'rails', '~> 5.0.2'
 gem 'puma', '~> 3.0'
 gem 'pg', '~> 0.18'
 gem 'responders'
+gem 'rails_admin'
 
 group :development do
   gem 'pry'
