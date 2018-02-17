@@ -8,6 +8,7 @@ gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'active_model_serializers'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'responders'
 
 group :development do
   gem 'pry'
