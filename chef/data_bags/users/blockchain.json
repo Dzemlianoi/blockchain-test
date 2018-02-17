@@ -1,0 +1,9 @@
+{
+  "id": "blockchain",
+  "password"  : "$1$toGQgnXv$zVzSMnw3GBgonCtwWuysT.",
+  "ssh_keys"  : [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKYD4kePlxkyY30iELQ6L9Buf2w0R1ABy4FpskDJMTYC4RxZ+m4SkXgQo46kmbgXV2TaFJF9+5c48CiPpDp1IYp6egCqFwSf7YRKomGcbEOoGRSqUVAXiOpuKf7PBpt7wTt027ZHJRmzgy5KErPaO+mIlAzDoay1gHQGhe9kB//AdMZAdmLCuEMoODq/rhSWQK/YpZIm63NCgmJHO7EUuZQkcy8cEDdL5LiyY6IBf3mpfni9wSzt5oeQvIOM87eI7mUbE9gt7QMIVZgAG2jJ7WWQJ0Ny7a6LpQgWuVfGrfAL9WJqWYNCwyDVBCh0IN7gA9/Hl2+0kgpZJE2/X52Byz denis.zemlianoy@rubygarage.org"
+  ],
+  "groups"    : ["sudo" ,"sysadmin", "www-data", "rvm"],
+  "shell"     : "\/bin\/bash"
+}

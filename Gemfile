@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'active_model_serializers'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'responders'
+gem 'uglifier'
 
 group :development do
   gem 'pry'
@@ -16,6 +17,12 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano-sidekiq',  require: false
+  gem 'capistrano3-puma',   require: false
 end
 
 group :test do
